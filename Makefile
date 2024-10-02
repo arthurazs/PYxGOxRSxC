@@ -1,6 +1,6 @@
-.PHONY: all python gobuild go gcc c clean
+.PHONY: all python gobuild go gcc c rustc rust clean
 
-all: python go c
+all: python go c rust
 
 python:
 	time python3 src/python.py
@@ -23,6 +23,15 @@ gcc: target/c.out
 c: gcc
 	time target/c.out
 	echo -e "# GCC\n"
+
+target/rust.out: src/rust.rs
+	rustc -o target/rust.out -C debuginfo=0 -C opt-level=3 src/rust.rs
+
+rustc: target/rust.out
+
+rust: rustc
+	time target/rust.out
+	echo -e "# RUST\n"
 
 clean:
 	rm target/*.out
