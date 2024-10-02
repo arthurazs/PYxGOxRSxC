@@ -7,7 +7,7 @@ The goal here is to compare the performance of all languages while compiled with
 - Rust `-C debuginfo=0 -C opt-level=3`
 - C `-O3`
 
-See the [Makefile][Makefile] for more information.
+See the [Makefile](Makefile) for more information.
 
 ## Benchmark
 
