@@ -1,6 +1,6 @@
-.PHONY: all python gobuild go
+.PHONY: all python gobuild go gcc c clean
 
-all: python go
+all: python go c
 
 python:
 	time python3 src/python.py
@@ -14,6 +14,15 @@ gobuild: target/go.out
 go: gobuild
 	time target/go.out
 	echo -e "# GO\n"
+
+target/c.out: src/c.c
+	gcc -o target/c.out src/c.c
+
+gcc: target/c.out
+
+c: gcc
+	time target/c.out
+	echo -e "# GCC\n"
 
 clean:
 	rm target/*.out
