@@ -1,7 +1,8 @@
 # include <stdint.h>
+# include <inttypes.h>
 # include <stdio.h>
 
-unsigned long fib(unsigned long n) {
+uint32_t fib(uint32_t n) {
     if (n < 2) {
         return n;
     }
@@ -9,8 +10,8 @@ unsigned long fib(unsigned long n) {
 }
 
 int main() {
-    unsigned long n = fib(37);
-    printf("%lu\n", n);
+    uint32_t n = fib(37);
+    printf("%" PRIu32 "\n", n);
     printf("%s\n", n == 24157817 ? "true" : "false");
     return 0;
 }
