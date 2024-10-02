@@ -11,7 +11,7 @@ See the [Makefile](Makefile) for more information.
 
 ## Benchmark
 
-Ubuntu 24.04, i5-9300H, 8 GB RAM.
+Ubuntu 24.04, i5-9300H CPU, 8 GB RAM.
 
 table
 
