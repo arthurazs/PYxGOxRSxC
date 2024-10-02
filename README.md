@@ -13,8 +13,6 @@ See the [Makefile](Makefile) for more information.
 
 Ubuntu 24.04, i5-9300H CPU, 8 GB RAM.
 
-table
-
 | Language | Time | Version |
 | --- | --- | --- |
 | Python | 4.14 s | 3.12.3 |
