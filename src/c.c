@@ -13,5 +13,6 @@ int main() {
     uint32_t n = fib(37);
     printf("%" PRIu32 "\n", n);
     printf("%s\n", n == 24157817 ? "true" : "false");
+
     return 0;
 }
