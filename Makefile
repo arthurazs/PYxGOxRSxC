@@ -1,4 +1,4 @@
-SHELL = /usr/bin/fish
+# SHELL = /usr/bin/fish
 .PHONY: all python gobuild go rustc rust gcc c clean
 
 all: python go rust c
